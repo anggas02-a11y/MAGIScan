@@ -1,0 +1,17 @@
+{
+    "admin": {
+        "password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewKyNiAYMyzJ/I1O",
+        "nama": "Anggas WJ",
+        "role": "admin"
+    },
+    "guru": {
+        "password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewKyNiAYMyzJ/I1O",
+        "nama": "Guru Mapel",
+        "role": "guru"
+    },
+    "tu": {
+        "password": "$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewKyNiAYMyzJ/I1O",
+        "nama": "Tata Usaha",
+        "role": "tu"
+    }
+}

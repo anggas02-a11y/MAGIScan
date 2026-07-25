@@ -1,0 +1,9 @@
+credentials.json
+
+backups/
+
+exports/
+
+__pycache__/
+
+*.pyc
