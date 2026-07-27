@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from datetime import datetime
 import cv2
-from pyzbar.pyzbar import decode
+cv2.QRCodeDetector()
 import numpy as np
 import qrcode
 from io import BytesIO
