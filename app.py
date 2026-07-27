@@ -1,5 +1,4 @@
 import streamlit as st
-st.write("MAGIScan berhasil di jalankan")
 import pandas as pd
 import os
 from datetime import datetime
