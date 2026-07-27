@@ -3,7 +3,8 @@ import pandas as pd
 import os
 from datetime import datetime
 import cv2
-cv2.QRCodeDetector()
+
+qr_detector = cv2.QRCodeDetector()
 import numpy as np
 import qrcode
 from io import BytesIO
@@ -359,11 +360,14 @@ def generate_qr(nisn):
 	return qr.make_image(fill_color="black", back_color="white")
 
 def scan_qr_code(image):
-	gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-	qr_codes = decode(gray)
-	for qr in qr_codes:
-		return qr.data.decode('utf-8')
-	return None
+    detector = cv2.QRCodeDetector()
+
+    data, points, _ = detector.detectAndDecode(image)
+
+    if points is not None and data:
+        return data.strip()
+
+    return None
 
 def generate_pdf(tanggal, df_absensi):
 	buffer = BytesIO()
